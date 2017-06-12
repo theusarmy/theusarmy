@@ -32,6 +32,10 @@ nav a {
   border-collapse: collapse;
 }
 
+.bordered-table td, .bordered-table th {
+  padding: 20px;
+}
+
 .green {
   color: #00AA00;
 }
