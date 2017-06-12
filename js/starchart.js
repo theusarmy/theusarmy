@@ -50,11 +50,13 @@
           var row = starchart.people[i].createRow();
           table.appendChild(row);
         }
+        console.log('Finished star search :D');
       }
     });
     
     xhr.send();
   }
   
-  fetchStarchartAndUpdateTAble(document.querySelector('table.bordered-table'), '/theusarmy.github.io/data/starchart.txt/');
+  fetchStarchartAndUpdateTable(document.querySelector('table.bordered-table'), '/theusarmy.github.io/data/starchart.txt/');
+  console.log('Began star search... v 1.0');
 })();
