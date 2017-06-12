@@ -27,7 +27,7 @@ nav a {
   padding: 20px;
 }
 
-#clan-info {
+#clan-info, #clan-info td {
   border: 2px solid #222222;
   border-collapse: collapse;
 }
