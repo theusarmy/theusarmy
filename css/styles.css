@@ -47,3 +47,7 @@ nav a {
 .red {
   color: #AA0000;
 }
+
+#promotion-demotion-symbol {
+  height: 80px;
+}
