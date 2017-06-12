@@ -54,4 +54,6 @@ nav a {
 
 .member-thumbnail {
   height: 100px;
+  float: left;
+  padding: 20px;
 }
