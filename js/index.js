@@ -1,7 +1,7 @@
 /* Copyright (c) 2017 Lin */
 
 (function() {
-  function underlineLinksPointingToThisPage() {
+  function emboldenLinksPointingToThisPage() {
     var links = document.querySelectorAll('a');
     for (var i = 0; i < links.length; i++) {
       var link = links[i];
@@ -13,8 +13,8 @@
     }
   }
   
-  underlineLinksPointingToThisPage();
+  emboldenLinksPointingToThisPage();
   
-  console.log('Finished polishing your page :D (script version 1.4)');
+  console.log('Finished polishing your page :D (script version 1.5)');
   console.log('%cHi there!\n%cYou should seriously join our clan. %c\nThere are web nerds like you in it! \n😉 🇺🇸 %cGo %cArmy!', 'font-size:50px;font-weight:bold;color:red', 'font-size:50px;font-weight:bold;color:blue;','font-size:50px;font-weight:bold;color:red', 'font-size:50px;font-weight:bold;color:blue', 'font-size:50px;font-weight:bold;color:red');
 })();
