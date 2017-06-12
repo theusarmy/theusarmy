@@ -12,8 +12,8 @@
     
     this.people = nonBlankLines.map(function(line) {
       var parts = line.split(' ');
-      var name = parts[0];
-      var stars = ~~parts[1];
+      var stars = ~~parts.pop();
+      var name = parts.join(' ');
       return new Person(name, stars);
     });
   };
