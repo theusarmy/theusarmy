@@ -4,7 +4,8 @@
   function underlineLinksPointingToThisPage() {
     var links = document.querySelectorAll('a');
     for (var i = 0; i < links.length; i++) {
-      var href = links[i].href;
+      var link = links[i];
+      var href = link.href;
       var location = '' + window.location;
       if (href === location || href === location + '#')  {
         link.style.textDecoration = 'underline';
