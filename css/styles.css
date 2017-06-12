@@ -51,3 +51,7 @@ nav a {
 .symbol {
   height: 80px;
 }
+
+.member-thumbnail {
+  height: 100px;
+}
