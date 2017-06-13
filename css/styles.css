@@ -74,3 +74,11 @@ nav a {
   float: left;
   padding: 20px;
 }
+
+.war-highlights img {
+  width: 100%;
+}
+
+.war-highlights p {
+  margin-bottom: 40px;
+}
