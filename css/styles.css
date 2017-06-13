@@ -75,6 +75,10 @@ nav a {
   padding: 20px;
 }
 
+.section.war-highlights {
+  padding-left: 10px;
+}
+
 .war-highlights img {
   width: 100%;
 }
