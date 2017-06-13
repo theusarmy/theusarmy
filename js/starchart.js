@@ -16,7 +16,7 @@
       var name = parts.join(' ');
       return new Person(name, stars);
     }).sort(function(person1, person2) {
-      return person1.name.charCodeAt(0) - person2.name.charCodeAt(0);
+      return person1.name.toLowerCase().charCodeAt(0) - person2.name.toLowerCase().charCodeAt(0);
     });
   };
   
@@ -60,5 +60,5 @@
   }
   
   fetchStarchartAndUpdateTable(document.querySelector('table.bordered-table'), '/theusarmy.github.io/data/star-chart.txt');
-  console.log('Began star search... v 1.5');
+  console.log('Began star search... v 1.6');
 })();
