@@ -15,6 +15,8 @@
       var stars = ~~parts.pop();
       var name = parts.join(' ');
       return new Person(name, stars);
+    }).sort(function(person1, person2) {
+      return person1.name.charCodeAt(0) - person2.name.charCodeAt(0);
     });
   };
   
