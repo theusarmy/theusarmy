@@ -60,5 +60,5 @@
   }
   
   fetchStarchartAndUpdateTable(document.querySelector('table.bordered-table'), '/theusarmy.github.io/data/star-chart.txt');
-  console.log('Began star search... v 1.3');
+  console.log('Began star search... v 1.5');
 })();
