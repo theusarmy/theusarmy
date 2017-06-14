@@ -71,7 +71,7 @@
     return row;
   };
   
-  function fetchStarchartAndUpdateTable(table, starchartURL) {
+  function fetchStarchart(starchartURL) {
     var xhr = new XMLHttpRequest();
     
     xhr.open('GET', starchartURL);
@@ -87,9 +87,12 @@
   }
   
   calculateBtn.addEventListener('click', function() {
-    var newStarchart = new Starchart(starData.value);
-    output.value = currentStarchart.plus(newStarchart).toString();
+    if (currentStarchart) {
+      var newStarchart = new Starchart(starData.value);
+      output.value = currentStarchart.plus(newStarchart).toString();
+    }
   });
   
-  console.log('Began star search... v 1.0');
+  fetchStarchart('/theusarmy.github.io/data/star-chart.txt');
+  console.log('Began star search... v 1.1');
 })();
