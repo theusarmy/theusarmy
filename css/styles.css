@@ -90,3 +90,7 @@ nav a {
 .badge-triplet {
   text-align: center;
 }
+
+.calculate-button {
+  height: 80px;
+}
