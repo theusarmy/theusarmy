@@ -30,13 +30,19 @@
     
     for (var i = 0; i < otherStarchart.people.length; i++) {
       var otherPerson = otherStarchart.people[i];
+      var personAlreadyExists = false;
       for (var j = 0; j < newChart.people.length; j++) {
         var myPerson  = newChart.people[j];
         
         if (myPerson.name === otherPerson.name) {
           myPerson.stars += otherPerson.stars;
+          personAlreadyExists = true;
           break;
         }
+      }
+      
+      if (!personAlreadyExists) {
+        newChart.people.push(new Person(otherPerson.name, otherPerson.stars));
       }
     }
     
@@ -94,5 +100,5 @@
   });
   
   fetchStarchart('/theusarmy.github.io/data/star-chart.txt');
-  console.log('Began star search... v 1.1');
+  console.log('Began star search... v 1.2');
 })();
