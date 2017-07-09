@@ -46,6 +46,10 @@
       }
     }
     
+    newChart.people.sort(function(p1, p2) {
+      return p1.name.toLowerCase().charCodeAt(0) - p2.name.toLowerCase().charCodeAt(0);
+    });
+    
     return newChart;
   };
   
@@ -100,5 +104,5 @@
   });
   
   fetchStarchart('/theusarmy.github.io/data/star-chart.txt');
-  console.log('Began star search... v 1.2');
+  console.log('Began star search... v 1.3');
 })();
